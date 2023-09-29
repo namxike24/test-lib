@@ -1,0 +1,27 @@
+pluginManagement {
+    repositories {
+        gradlePluginPortal()
+        google()
+        mavenCentral()
+        jcenter()
+        maven { url "https://google.com" }
+        maven { url 'https://jitpack.io' }
+    }
+}
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.PREFER_SETTINGS)
+    repositories {
+        google()
+        mavenCentral()
+        jcenter()
+        maven {
+            url "https://maven.pkg.github.com/namxike24/*"
+            credentials {
+                username GITHUB_ID
+                password GITHUB_PACKAGES_TOKEN
+            }
+        }
+    }
+}
+rootProject.name = "My Application"
+include ':app'

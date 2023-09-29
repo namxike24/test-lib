@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "720591240992",
+    "project_id": "mylauncher-f0d1c",
+    "storage_bucket": "mylauncher-f0d1c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:720591240992:android:edd3a280c7d686bd1c6145",
+        "android_client_info": {
+          "package_name": "ai.ftech.mylauncher"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "720591240992-gh4vh9gjnfbfn8bvb7lja63vq9ji65j2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAYUUCy40bH8yCmbAq3q0IE16Q3Wt_vqo4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "720591240992-gh4vh9gjnfbfn8bvb7lja63vq9ji65j2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

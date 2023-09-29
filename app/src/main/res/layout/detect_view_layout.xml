@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:orientation="vertical"
+    android:focusable="true">
+
+    <TextView
+        android:id="@+id/tvPosition"
+        android:layout_width="wrap_content"
+        android:minWidth="20dp"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        android:padding="2dp"
+        android:background="@drawable/shape_oval_black_bg"
+        tools:text="1" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ivTopLeft"
+        android:layout_width="12dp"
+        android:layout_height="12dp"
+        android:visibility="invisible"
+        android:tint="@color/orange"
+        app:srcCompat="@drawable/ic_detect_top_left" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ivTopRight"
+        android:layout_width="12dp"
+        android:layout_height="12dp"
+        android:visibility="invisible"
+        android:layout_alignParentEnd="true"
+        android:tint="@color/orange"
+        app:srcCompat="@drawable/ic_detect_top_right" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ivBottomLeft"
+        android:layout_width="12dp"
+        android:visibility="invisible"
+        android:layout_height="12dp"
+        android:layout_alignParentBottom="true"
+        android:tint="@color/orange"
+        app:srcCompat="@drawable/ic_detect_bottom_left" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ivBottomRight"
+        android:layout_width="12dp"
+        android:layout_height="12dp"
+        android:visibility="invisible"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:tint="@color/orange"
+        app:srcCompat="@drawable/ic_detect_bottom_right" />
+
+</RelativeLayout>

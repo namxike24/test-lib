@@ -1,0 +1,387 @@
+[
+  {
+    "nameVi": "Việt Nam",
+    "nameEn": "Viet Nam",
+    "flag": "viet_nam"
+  },
+  {
+    "nameVi": "Thái Lan",
+    "nameEn": "Thailand",
+    "flag": "thailand"
+  },
+  {
+    "nameVi": "Singapore",
+    "nameEn": "Singapore",
+    "flag": "singapore"
+  },
+  {
+    "nameVi": "Philippines",
+    "nameEn": "Philippines",
+    "flag": "philippines"
+  },
+  {
+    "nameVi": "Myanmar",
+    "nameEn": "Myanmar",
+    "flag": "myanmar"
+  },
+  {
+    "nameVi": "Malaysia",
+    "nameEn": "Malaysia",
+    "flag": "malaysia"
+  },
+  {
+    "nameVi": "Lào",
+    "nameEn": "Laos",
+    "flag": "lao"
+  },
+  {
+    "nameVi": "Indonesia",
+    "nameEn": "Indonesia",
+    "flag": "indonesia"
+  },
+  {
+    "nameVi": "Đông Timor",
+    "nameEn": "Timor Leste",
+    "flag": "timor"
+  },
+  {
+    "nameVi": "Campuchia",
+    "nameEn": "Cambodia",
+    "flag": "cambodia"
+  },
+  {
+    "nameVi": "Brunei",
+    "nameEn": "Brunei",
+    "flag": "brunei"
+  },
+  {
+    "nameVi": "Áo",
+    "nameEn": "Austria",
+    "flag": "austria"
+  },
+  {
+    "nameVi": "Armenia",
+    "nameEn": "Armenia",
+    "flag": "armenia"
+  },
+  {
+    "nameVi": "Afghanistan",
+    "nameEn": "Afghanistan",
+    "flag": "afghanistan"
+  },
+  {
+    "nameVi": "Ai Cập",
+    "nameEn": "Egypt",
+    "flag": "egypt"
+  },
+  {
+    "nameVi": "Algeria",
+    "nameEn": "Algeria",
+    "flag": "algeria"
+  },
+  {
+    "nameVi": "Argentina",
+    "nameEn": "Argentina",
+    "flag": "argentina"
+  },
+  {
+    "nameVi": "Ấn độ",
+    "nameEn": "India",
+    "flag": "india"
+  },
+  {
+    "nameVi": "Bahrain",
+    "nameEn": "Bahrain",
+    "flag": "bahrain"
+  },
+  {
+    "nameVi": "Ba Lan",
+    "nameEn": "Poland",
+    "flag": "poland"
+  },
+  {
+    "nameVi": "Bangladesh",
+    "nameEn": "Bangladesh",
+    "flag": "bangladesh"
+  },
+  {
+    "nameVi": "Bỉ",
+    "nameEn": "Belgium",
+    "flag": "belgium"
+  },
+  {
+    "nameVi": "Bôlivia",
+    "nameEn": "Bolivia",
+    "flag": "bolivia"
+  },
+  {
+    "nameVi": "Bồ Đào Nha",
+    "nameEn": "Portugal",
+    "flag": "portugal"
+  },
+  {
+    "nameVi": "Brazil",
+    "nameEn": "Brazil",
+    "flag": "brazil"
+  },
+  {
+    "nameVi": "Bulgaria",
+    "nameEn": "Bulgaria",
+    "flag": "bulgaria"
+  },
+  {
+    "nameVi": "Burkina Faso",
+    "nameEn": "Burkina Faso",
+    "flag": "burkina"
+  },
+  {
+    "nameVi": "Ca-mơ-run",
+    "nameEn": "Cameroon",
+    "flag": "cameroon"
+  },
+  {
+    "nameVi": "Canada",
+    "nameEn": "Canada",
+    "flag": "canada"
+  },
+  {
+    "nameVi": "Chilê",
+    "nameEn": "Chile",
+    "flag": "chile"
+  },
+  {
+    "nameVi": "Colombia",
+    "nameEn": "Colombia",
+    "flag": "colombia"
+  },
+  {
+    "nameVi": "Costa Rica",
+    "nameEn": "Costa Rica",
+    "flag": "costa_rica"
+  },
+  {
+    "nameVi": "Cuba",
+    "nameEn": "Cuba",
+    "flag": "cuba"
+  },
+  {
+    "nameVi": "Đan Mạch",
+    "nameEn": "Denmark",
+    "flag": "denmark"
+  },
+  {
+    "nameVi": "Đức",
+    "nameEn": "Germany",
+    "flag": "germany"
+  },
+  {
+    "nameVi": "Gabon",
+    "nameEn": "Gabon",
+    "flag": "gabon"
+  },
+  {
+    "nameVi": "Gambia",
+    "nameEn": "Gambia",
+    "flag": "gambia"
+  },
+  {
+    "nameVi": "Ghana",
+    "nameEn": "Ghana",
+    "flag": "ghana"
+  },
+  {
+    "nameVi": "Gruzia",
+    "nameEn": "Georgia",
+    "flag": "gruzia"
+  },
+  {
+    "nameVi": "Hà Lan",
+    "nameEn": "Netherlands",
+    "flag": "netherlands"
+  },
+  {
+    "nameVi": "Hàn Quốc",
+    "nameEn": "Korea",
+    "flag": "korea"
+  },
+  {
+    "nameVi": "Hoa Kỳ",
+    "nameEn": "USA",
+    "flag": "usa"
+  },
+  {
+    "nameVi": "Hungary",
+    "nameEn": "Hungary",
+    "flag": "hungary"
+  },
+  {
+    "nameVi": "Hy Lạp",
+    "nameEn": "Greek",
+    "flag": "greek"
+  },
+  {
+    "nameVi": "Ailen",
+    "nameEn": "Ireland",
+    "flag": "ireland"
+  },
+  {
+    "nameVi": "Jamaica",
+    "nameEn": "Jamaica",
+    "flag": "jamaica"
+  },
+  {
+    "nameVi": "Jordan",
+    "nameEn": "Jordan",
+    "flag": "jordan"
+  },
+  {
+    "nameVi": "Cô-oét",
+    "nameEn": "Kuwait",
+    "flag": "kuwait"
+  },
+  {
+    "nameVi": "Latvia",
+    "nameEn": "Latvia",
+    "flag": "latvia"
+  },
+  {
+    "nameVi": "Liberia",
+    "nameEn": "Liberia",
+    "flag": "liberia"
+  },
+  {
+    "nameVi": "Libya",
+    "nameEn": "Libya",
+    "flag": "libya"
+  },
+  {
+    "nameVi": "Litva",
+    "nameEn": "Litva",
+    "flag": "litva"
+  },
+  {
+    "nameVi": "Mali",
+    "nameEn": "Mali",
+    "flag": "mali"
+  },
+  {
+    "nameVi": "Maroc",
+    "nameEn": "Morocco",
+    "flag": "morocco"
+  },
+  {
+    "nameVi": "Mông Cổ",
+    "nameEn": "Mongolia",
+    "flag": "mongolia"
+  },
+  {
+    "nameVi": "Nam Phi",
+    "nameEn": "South Africa",
+    "flag": "south_africa"
+  },
+  {
+    "nameVi": "Na Uy",
+    "nameEn": "Norway",
+    "flag": "norway"
+  },
+  {
+    "nameVi": "Niger",
+    "nameEn": "Niger",
+    "flag": "niger"
+  },
+  {
+    "nameVi": "Nigeria",
+    "nameEn": "Nigeria",
+    "flag": "nigeria"
+  },
+  {
+    "nameVi": "Nga",
+    "nameEn": "Russia",
+    "flag": "russia"
+  },
+  {
+    "nameVi": "Nhật Bản",
+    "nameEn": "Japan",
+    "flag": "japan"
+  },
+  {
+    "nameVi": "Palestine",
+    "nameEn": "Palestine",
+    "flag": "palestine"
+  },
+  {
+    "nameVi": "Panama",
+    "nameEn": "Panama",
+    "flag": "panama"
+  },
+  {
+    "nameVi": "Pêru",
+    "nameEn": "Peru",
+    "flag": "peru"
+  },
+  {
+    "nameVi": "Pháp",
+    "nameEn": "France",
+    "flag": "france"
+  },
+  {
+    "nameVi": "Phần Lan",
+    "nameEn": "Finland",
+    "flag": "finland"
+  },
+  {
+    "nameVi": "Qatar",
+    "nameEn": "Qatar",
+    "flag": "qatar"
+  },
+  {
+    "nameVi": "Sénégal",
+    "nameEn": "Senegal",
+    "flag": "senegal"
+  },
+  {
+    "nameVi": "Somali",
+    "nameEn": "Somalia",
+    "flag": "somalia"
+  },
+  {
+    "nameVi": "Syria",
+    "nameEn": "Syria",
+    "flag": "syria"
+  },
+  {
+    "nameVi": "Tây Ban Nha",
+    "nameEn": "Spain",
+    "flag": "spain"
+  },
+  {
+    "nameVi": "Thổ Nhĩ Kỳ",
+    "nameEn": "Türkiye",
+    "flag": "turkey"
+  },
+  {
+    "nameVi": "Thụy Điển",
+    "nameEn": "Sweden",
+    "flag": "sweden"
+  },
+  {
+    "nameVi": "Thụy Sĩ",
+    "nameEn": "Switzerland",
+    "flag": "switzerland"
+  },
+  {
+    "nameVi": "Trung Quốc",
+    "nameEn": "China",
+    "flag": "china"
+  },
+  {
+    "nameVi": "Ý",
+    "nameEn": "Italy",
+    "flag": "italy"
+  },
+  {
+    "nameVi": "Yêmen",
+    "nameEn": "Yemen",
+    "flag": "yemen"
+  }
+]

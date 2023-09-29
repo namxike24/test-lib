@@ -1,0 +1,111 @@
+plugins {
+    id 'com.android.application'
+    id 'org.jetbrains.kotlin.android'
+    id 'com.google.gms.google-services'
+}
+
+android {
+    compileSdk 32
+
+    defaultConfig {
+        applicationId "ai.ftech.mylauncher"
+        minSdk 24
+        targetSdk 32
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+
+        ndk {
+            abiFilters 'armeabi', 'armeabi-v7a', 'arm64-v8a', 'x86', 'x86_64', 'mips', 'mips64'
+        }
+
+        manifestPlaceholders = [
+                JIGUANG_PRIVATES_APPKEY : "82b0a4bccd6768d52c061a34",
+                JIGUANG_PRIVATES_CHANNEL: "developer",
+                JIGUANG_PRIVATES_PROCESS: ":remote",
+        ]
+    }
+
+    signingConfigs {
+        FunzyDev {
+            storeFile file("${rootDir}/funzy-dev.keystore")
+            storePassword "abcd@1234"
+            keyAlias "funzy"
+            keyPassword "abcd@1234"
+        }
+    }
+
+    buildTypes {
+        debug {
+            signingConfig signingConfigs.FunzyDev
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+        release {
+            signingConfig signingConfigs.FunzyDev
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+    buildFeatures {
+        viewBinding true
+    }
+
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ['libs']
+        }
+    }
+    packagingOptions {
+        pickFirst "**/lib/**"
+    }
+}
+
+def githubProperties = new Properties()
+githubProperties.load(new FileInputStream(rootProject.file("github.properties")))
+
+//repositories {
+//    maven {
+//        name = "httpclient"
+//        /*  Configure path to the library hosted on GitHub Package Registry
+//         *  Replace UserID with package owner userID and REPOSITORY with the repository name
+//         *  e.g. "https://maven.pkg.github.com/enefce/AndroidLibraryForGitHubPackagesDemo"
+//         */
+//        url = uri("https://maven.pkg.github.com/namxike24/httpclient")
+//
+//        credentials {
+//            username = githubProperties['gpr.usr'] ?: System.getenv("GPR_USER")
+//            password = githubProperties['gpr.key'] ?: System.getenv("GPR_API_KEY")
+//        }
+//    }
+//}
+
+repositories {
+    maven {
+        url = uri("https://maven.pkg.github.com/namxike24/httpclient")
+        credentials {
+            username = githubProperties['gpr.usr'] ?: System.getenv("USERNAME")
+            password = githubProperties['gpr.key'] ?: System.getenv("TOKEN")
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar', '*.aar'])
+    implementation 'androidx.core:core-ktx:1.7.0'
+    implementation 'androidx.appcompat:appcompat:1.5.1'
+    implementation 'com.google.android.material:material:1.7.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    implementation 'com.google.code.gson:gson:2.8.9'
+
+    implementation 'com.watayouxiang:httpclient:1.0.0'
+
+}
