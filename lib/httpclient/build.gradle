@@ -21,6 +21,26 @@ android {
         dataBinding true
         viewBinding true
     }
+    publishing {
+        singleVariant("release") {
+            withSourcesJar()
+            withJavadocJar()
+        }
+    }
+}
+
+publishing {
+    publications {
+        release(MavenPublication) {
+            groupId = 'com.github.namxike24'
+            artifactId = 'test-lib'
+            version = '1.0.2'
+
+            afterEvaluate {
+                from components.release
+            }
+        }
+    }
 }
 
 //def githubProperties = new Properties()
