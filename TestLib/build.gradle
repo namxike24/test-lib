@@ -6,11 +6,11 @@ plugins {
 
 android {
     namespace 'ai.ftech.testlib'
-    compileSdk 32
+    compileSdk 33
 
     defaultConfig {
         minSdk 23
-        targetSdk 32
+        targetSdk 33
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         consumerProguardFiles "consumer-rules.pro"
@@ -42,7 +42,7 @@ publishing {
         release(MavenPublication) {
             groupId = 'com.github.namxike24'
             artifactId = 'test-lib'
-            version = '1.0.0'
+            version = '1.0.1'
 
             afterEvaluate {
                 from components.release
