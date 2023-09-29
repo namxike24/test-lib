@@ -5,6 +5,18 @@ plugins {
     id 'org.jetbrains.kotlin.android' version '1.7.10' apply false
 }
 
+//allprojects {
+//    repositories {
+//        maven {
+//            url "https://maven.pkg.github.com/namxike24/*"
+//            credentials {
+//                username GITHUB_ID
+//                password GITHUB_PACKAGES_TOKEN
+//            }
+//        }
+//    }
+//}
+
 task clean(type: Delete) {
     delete rootProject.buildDir
 }

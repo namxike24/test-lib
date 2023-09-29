@@ -14,8 +14,11 @@ dependencyResolutionManagement {
         google()
         mavenCentral()
         jcenter()
+        maven { url "https://google.com" }
+        maven { url 'https://jitpack.io' }
     }
 }
 rootProject.name = "Nation Flag"
 include ':app'
 include ':TestLib'
+include ':lib:httpclient'

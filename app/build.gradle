@@ -3,6 +3,9 @@ plugins {
     id 'org.jetbrains.kotlin.android'
 }
 
+def githubProperties = new Properties()
+githubProperties.load(new FileInputStream(rootProject.file("github.properties")))
+
 android {
     compileSdk 33
 
@@ -51,6 +54,20 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
+
+    repositories {
+        maven {
+            name = "tiolib"
+            url = uri("https://maven.pkg.github.com/namxike24/tiolib")
+
+            credentials {
+                /**Create github.properties in root project folder file with gpr.usr=GITHUB_USER_ID  & gpr.key =PERSONAL_ACCESS_TOKEN**/
+                username = System.getenv("GPR_USER") ?: githubProperties['gpr.usr']
+                password = System.getenv("GPR_API_KEY") ?: githubProperties['gpr.key']
+            }
+        }
+    }
+
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
@@ -69,24 +86,6 @@ android {
     }
 }
 
-def githubProperties = new Properties()
-githubProperties.load(new FileInputStream(rootProject.file("github.properties")))
-
-//repositories {
-//    maven {
-//        name = "httpclient"
-//        /*  Configure path to the library hosted on GitHub Package Registry
-//         *  Replace UserID with package owner userID and REPOSITORY with the repository name
-//         *  e.g. "https://maven.pkg.github.com/enefce/AndroidLibraryForGitHubPackagesDemo"
-//         */
-//        url = uri("https://maven.pkg.github.com/namxike24/httpclient")
-//
-//        credentials {
-//            username = githubProperties['gpr.usr'] ?: System.getenv("GPR_USER")
-//            password = githubProperties['gpr.key'] ?: System.getenv("GPR_API_KEY")
-//        }
-//    }
-//}
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar', '*.aar'])
@@ -96,5 +95,23 @@ dependencies {
     implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
     implementation 'com.google.code.gson:gson:2.8.9'
     implementation project(':TestLib')
+    implementation project(path: ':lib:httpclient')
+
+//    implementation 'ai.ftech.tiolib:webrtclib:1.0.1'
+//    implementation 'ai.ftech.tiolib:appupdate:1.0.0'
+//    implementation 'ai.ftech.tiolib:audiorecord:1.0.0'
+//    implementation 'ai.ftech.tiolib:db:1.0.1'
+//    implementation 'ai.ftech.tiolib:qrcode:1.0.0'
+//    implementation 'ai.ftech.tiolib:imclient:1.0.1'
+//    implementation 'ai.ftech.tiolib:httpclient:1.0.0'
+//    implementation 'ai.ftech.tiolib:androidutils:1.0.0'
+//    implementation 'ai.ftech.tiolib:verification:1.0.0'
+//    implementation 'ai.ftech.tiolib:social-tio:1.0.0'
+//    implementation 'ai.ftech.tiolib:jpush:1.0.0'
+//    implementation 'ai.ftech.tiolib:account:1.0.0'
+//    implementation 'ai.ftech.tiolib:session:1.0.0'
+//    implementation 'ai.ftech.tiolib:webrtc:1.0.0'
+//    implementation 'ai.ftech.tiolib:common-tio:1.0.0'
+//    implementation 'ai.ftech.tiolib:commonwallet:1.0.0'
 
 }
