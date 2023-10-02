@@ -15,6 +15,7 @@
             <option value="$PROJECT_DIR$/app" />
             <option value="$PROJECT_DIR$/lib" />
             <option value="$PROJECT_DIR$/lib/httpclient" />
+            <option value="$PROJECT_DIR$/testlib2" />
           </set>
         </option>
       </GradleProjectSettings>

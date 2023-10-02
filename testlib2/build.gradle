@@ -1,19 +1,21 @@
 plugins {
-    id 'com.android.library'
+    id 'com.android.application'
     id 'org.jetbrains.kotlin.android'
     id 'maven-publish'
 }
 
 android {
-    namespace 'ai.ftech.testlib'
-    compileSdk 33
+    namespace 'com.nam.testlib2'
+    compileSdk 32
 
     defaultConfig {
+        applicationId "com.nam.testlib2"
         minSdk 23
-        targetSdk 33
+        targetSdk 32
+        versionCode 1
+        versionName "1.0"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
-        consumerProguardFiles "consumer-rules.pro"
     }
 
     buildTypes {
