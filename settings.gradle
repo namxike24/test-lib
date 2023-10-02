@@ -22,4 +22,3 @@ rootProject.name = "Nation Flag"
 include ':app'
 include ':TestLib'
 include ':lib:httpclient'
-include ':testlib2'
